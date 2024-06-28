@@ -1,0 +1,26 @@
+[33mcommit 8076634171cf6b376ecca31b3fe78954a14dd864[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/develop[m[33m, [m[1;32mmain[m[33m)[m
+Author: FRANKLIN <fventuraq@gmail.com>
+Date:   Thu Jun 27 17:27:48 2024 -0300
+
+    update gitignore (ignote data)
+
+ .gitignore | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 512efaa019d06f7cfe801510ee1b3d0b5712a8f0[m
+Author: FRANKLIN <fventuraq@gmail.com>
+Date:   Thu Jun 27 17:23:21 2024 -0300
+
+    Firs commit latam challenge
+
+ .gitignore          |  2 [32m++[m
+ README.md           | 75 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ requirements.txt    |  1 [32m+[m
+ src/challenge.ipynb | 28 [32m++++++++++++++++++++[m
+ src/q1_memory.py    |  5 [32m++++[m
+ src/q1_time.py      |  5 [32m++++[m
+ src/q2_memory.py    |  4 [32m+++[m
+ src/q2_time.py      |  4 [32m+++[m
+ src/q3_memory.py    |  4 [32m+++[m
+ src/q3_time.py      |  4 [32m+++[m
+ 10 files changed, 132 insertions(+)

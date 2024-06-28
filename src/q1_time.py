@@ -8,12 +8,13 @@ def q1_time(file_path: str) -> List[Tuple[datetime.date, str]]:
     #Usamos defaultdict para almacenar usuarios por fechas
     date_user_counter = defaultdict(Counter)
 
-    #Cargamos todos los datos
+    #Cargamos todos los datos con el fin de optimizar el tiempo de ejecucion
     with open(file_path, 'r') as file:
-        data = [json.loads(line) for line in file]
-    
-    #Procesamos los datos
-    for tweet in data:
+        data = file.readlines()  
+          
+    #Procesamos los los datos
+    for line in data:
+        tweet = json.loads(line)
         #convertimos la fecha en datetime.date
         date = datetime.strptime(tweet['date'], "%Y-%m-%dT%H:%M:%S%z").date()
         #obtenemos el nombre de usuario de tweet

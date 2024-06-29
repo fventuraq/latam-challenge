@@ -10,11 +10,11 @@ def q3_time(file_path: str) -> List[Tuple[str, int]]:
     #Usamos regex para encontrar menciones en el formato @username
     mention_pattern = re.compile(r'@\w+')
 
-    # Cargamos todo el archivo con el fin de optimizar el tiempo de ejecución
+    #Cargamos todo el archivo con el fin de optimizar el tiempo de ejecución
     with open(file_path, 'r') as file:
         data = file.readlines()
     
-    # Procesamos cada línea del archivo
+    #Procesamos cada línea del archivo
     for line in data:
         tweet = json.loads(line)
         #Encontramos las menciones en el contenido del tweet
